@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RedBlack — Home</title>
+
+  <!-- Bootstrap & jQuery -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <a href="index.html" class="brand"><span class="brand-red">Red</span><span class="brand-black">Black</span></a>
+      </div>
+      <nav>
+        <ul class="nav-list d-flex gap-3">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <!-- Hero -->
+    <section class="hero card">
+      <div class="hero-inner">
+        <h1>Modern Red & Black Website</h1>
+        <p>Простой современный шаблон — адаптивный, с интерактивными элементами и требованиями для финального проекта.</p>
+        <a href="services.html" class="btn btn-outline-light btn-lg">Our Services</a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features mt-4">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <article class="feature-card p-3">
+            <h3>Responsive</h3>
+            <p>Работает на мобильных и десктопах.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="feature-card p-3">
+            <h3>Gallery + Lightbox</h3>
+            <p>Фильтрация и просмотр изображений.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="feature-card p-3">
+            <h3>Interactive Forms</h3>
+            <p>Валидация, индикатор пароля и модальные окна.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simple Table (HTML requirement) -->
+    <section class="mt-4">
+      <h2>Pricing</h2>
+      <div class="table-responsive">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr><th>Plan</th><th>Price</th><th>Details</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Basic</td><td>$49</td><td>Portfolio starter</td></tr>
+            <tr><td>Pro</td><td>$99</td><td>Extended features</td></tr>
+            <tr><td>Studio</td><td>$199</td><td>Full service</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Search Demo -->
+    <section class="mt-4">
+      <h2>Live search (Demo)</h2>
+      <input id="liveSearch" class="form-control" placeholder="Search services..." />
+      <ul id="searchResults" class="list-unstyled mt-2">
+        <li class="search-item">Photo editing</li>
+        <li class="search-item">Web design</li>
+        <li class="search-item">Brand identity</li>
+        <li class="search-item">Social media</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer mt-5">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>© <span id="year"></span> RedBlack</div>
+      <div class="socials">
+        <a href="#" aria-label="instagram">IG</a>
+        <a href="#" aria-label="twitter">TW</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
